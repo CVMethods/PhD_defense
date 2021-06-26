@@ -263,3 +263,13 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+
+build/
+
+figures/source_files/
+
+figures/source_diagrams/
+
+figures/gif_ellipse/
+
+*.mov
