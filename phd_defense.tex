@@ -286,7 +286,7 @@ Typical pipeline of a scene understanding system.\\
 
 \centering
 \vfill
-\textbf{Scene understanding} $\Rightarrow$  aid in control and decision making in UAV missions
+\textbf{Scene understanding} $\Rightarrow$  aid in control and decision-making in UAV missions
 \vfill
 \begin{minipage}{0.6\textwidth}
  \centering
@@ -327,7 +327,7 @@ Typical pipeline of a scene understanding system.\\
 \begin{frame}{Motivation 3/3: Challenge of Uncontrolled Conditions in Image Processing}%Image Characteristics and Technical Locks in
 \framesubtitle{Image Characteristics and Technical Locks}
 
-\flushleft\textbf{Problems retaled to the visual sensors:}\\~\\
+\flushleft\textbf{Problems related to the visual sensors:}\\~\\
 \centering
 \begin{tabular}{ccc}
  \includegraphics[height=0.25\textheight]{rolling_shutter} & \includegraphics[height=0.25\textheight]{image_noise} & \includegraphics[height=0.25\textheight]{fisheye}\\
@@ -335,7 +335,7 @@ Typical pipeline of a scene understanding system.\\
 \end{tabular}
 \vfill
 
-\flushleft\textbf{Problems retaled to the environment and nature of the task:}\\~\\
+\flushleft\textbf{Problems related to the environment and nature of the task:}\\~\\
 \centering
 \begin{tabular}{ccc}
  \includegraphics[height=0.25\textheight]{Bebop_A} & \includegraphics[height=0.25\textheight]{Bebop_B} & \includegraphics[height=0.25\textheight]{Bebop_C}\\
@@ -509,10 +509,10 @@ Proposed pipeline of a scene understanding system \\
 
 \end{itemize}
 
-\underline{Disavantages:}
+\underline{Disadvantages:}
 \begin{itemize}
 	\scriptsize
-	\item The extrated features have different order of magnitude
+	\item The extracted features have different order of magnitude
 	\item Use of similarity measures that are not true metrics
 	\item The combination of features does not follow the signal theory 
 	  
@@ -858,7 +858,7 @@ We mainly explore three low-level information: \textbf{Intensity, Color and Text
 \begin{minipage}{0.60\textwidth}
 	\begin{itemize}
 		\item Recognize objects as a whole before examining their individual parts. 
-		\item Information that is unrelated in size, shape, orientation, etc will appear chaotic and unorganized to a viewer.
+		\item Information that is unrelated in size, shape, orientation, etc. will appear chaotic and unorganized to a viewer.
 	\end{itemize}
 \end{minipage}
 \begin{minipage}{0.39\textwidth}
@@ -1228,7 +1228,7 @@ We mainly explore three low-level information: \textbf{Intensity, Color and Text
 Marr-Hildreth (1980) edge detection algorithm:\\
 \begin{itemize}
 	\item Closed contours
-	\item Sensible to image noise
+	\item Sensitive to image noise
 \end{itemize} 
 \vspace{5mm}
 \vfill
@@ -1297,13 +1297,13 @@ Marr-Hildreth (1980) edge detection algorithm:\\
 %----------------------------------------------------------------------------------------
 \begin{frame}{Non-Accidentalness Estimation} %\qquad \includegraphics[width=0.06\textwidth]{helmholtz_dots}  ~ \includegraphics[width=0.06\textwidth]{helmholtz_line}
 \framesubtitle{}
-\textbf{1. Multi-variable space} using the \underline{the circularity} and the \underline{mean gradient} of the retrived contours\\
+\textbf{1. Multi-variable space} using the \underline{the circularity} and the \underline{mean gradient} of the retrieved contours\\
 
 \textbf{2. Meaningful deviation from randomness:} RX anomaly detector [Reed-Yu, 1990] \\
 
 \note[item]{RX anomaly detector computes the Mahalanobis distance between the contour features to the centroid of the density of probability of the data distribution.}
 
-\textbf{Parameter calibration free method:} The distence vector follows a chi-square distribution $\chi^{2}_{Q}(\varphi)$ with $\varphi$ as confidence level.\\
+\textbf{Parameter calibration free method:} The distance vector follows a chi-square distribution $\chi^{2}_{Q}(\varphi)$ with $\varphi$ as confidence level.\\
 \note[item]{By setting the confidence level at a high value, we recover the contours that have an anomalous circularity and mean gradient that accoding with the features distribution.}
 \centering
 $\widetilde{\mathcal{L}}= \{ L_{i} \mid y_i > \chi_Q^2(\varphi)\}$ where  $\varphi=99.9\%$\\
@@ -2892,7 +2892,7 @@ We carefully modify the Gabor's function to analytically obtain some control par
 %----------------------------------------------------------------------------------------
 \begin{frame}{Conclusions}
 \framesubtitle{}
-\textbf{1. Application of perceptual Gestalt laws for unspervised landing target detection:}\\
+\textbf{1. Application of perceptual Gestalt laws for unsupervised landing target detection:}\\
 \begin{itemize}
 	\item Free of parameter adjustment
 	\item Robust to natural image perturbations
@@ -2900,9 +2900,9 @@ We carefully modify the Gabor's function to analytically obtain some control par
 
 \vfill
 
-\textbf{2. Application of OT theory to use the EMD on heterogeneous spaces (linear, cicular, logarithmic axis):}\\
+\textbf{2. Application of OT theory to use the EMD on heterogeneous spaces (linear, circular, logarithmic axis):}\\
 \begin{itemize}
-	\item Validation of choices with different experiment: color and texture image classification
+	\item Validation of choices with different experiments: color and texture image classification
 \end{itemize}
 
 \vfill
@@ -2923,7 +2923,7 @@ We carefully modify the Gabor's function to analytically obtain some control par
 \textbf{Optimization:}
 \begin{itemize}
 	\item Real-time implementation and optimization of the landing target detection algorithm for embedded platforms.
-	\item Optimization of EMD calculation, e.g. Sinkhorn regularization. 
+	\item Optimization of EMD calculation, e.g., Sinkhorn regularization. 
 	\item Optimization of graph-based gradient on the support of pixels.
 \end{itemize}
 
@@ -2938,7 +2938,7 @@ We carefully modify the Gabor's function to analytically obtain some control par
 
 \textbf{Machine learning algorithms:}
 \begin{itemize}
-	\item Learn the importance of intensity, color and texture when segmenting.
+	\item Learn the importance of intensity, color, and texture when segmenting.
 	\item Gabor layers for DL model regularization.
 \end{itemize}
 
